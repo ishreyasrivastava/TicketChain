@@ -26,7 +26,7 @@ const Navigation = ({ account, setAccount }) => {
               <HiTicket className="text-white text-lg" />
             </div>
             <span className="font-display font-bold text-xl gradient-text">
-              TokenMaster
+              TicketChain
             </span>
           </motion.div>
 

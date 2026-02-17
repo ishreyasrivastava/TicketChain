@@ -7,11 +7,11 @@ const tokens = (n) => {
 async function main() {
   const [deployer] = await ethers.getSigners()
 
-  const TokenMaster = await ethers.getContractFactory("TokenMaster")
-  const tokenMaster = await TokenMaster.deploy("TokenMaster", "TM")
+  const TicketChain = await ethers.getContractFactory("TicketChain")
+  const tokenMaster = await TicketChain.deploy("TicketChain", "TM")
   await tokenMaster.deployed()
 
-  console.log(`Deployed TokenMaster Contract at: ${tokenMaster.address}\n`)
+  console.log(`Deployed TicketChain Contract at: ${tokenMaster.address}\n`)
 
   const occasions = [
     {

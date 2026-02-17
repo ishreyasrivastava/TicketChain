@@ -1,6 +1,6 @@
 const { expect } = require("chai")
 
-const NAME = "TokenMaster"
+const NAME = "TicketChain"
 const SYMBOL = "TM"
 
 const OCCASION_NAME = "ETH Tokyo"
@@ -10,14 +10,14 @@ const OCCASION_DATE = "Jun 2,2026"
 const OCCASION_TIME = "6:00PM JST"
 const OCCASION_LOCATION = "Tokyo, Japan"
 
-describe("TokenMaster", () => {
+describe("TicketChain", () => {
   let tokenMaster
   let deployer, buyer
 
   beforeEach(async () => {
     [deployer, buyer] = await ethers.getSigners()
-    const TokenMaster = await ethers.getContractFactory("TokenMaster")
-    tokenMaster = await TokenMaster.deploy(NAME, SYMBOL)
+    const TicketChain = await ethers.getContractFactory("TicketChain")
+    tokenMaster = await TicketChain.deploy(NAME, SYMBOL)
 
     const transaction = await tokenMaster.connect(deployer).list(
       OCCASION_NAME,

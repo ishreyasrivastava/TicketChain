@@ -9,13 +9,13 @@ import SeatChart from './components/SeatChart'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 
-import TokenMasterABI from './abis/TokenMaster.json'
+import TicketChainABI from './abis/TicketChain.json'
 import config from './config.json'
 
 function App() {
   const [provider, setProvider] = useState(null)
   const [account, setAccount] = useState(null)
-  const [tokenMaster, setTokenMaster] = useState(null)
+  const [tokenMaster, setTicketChain] = useState(null)
   const [occasions, setOccasions] = useState([])
   const [occasion, setOccasion] = useState({})
   const [toggle, setToggle] = useState(false)
@@ -35,10 +35,10 @@ function App() {
 
       const tokenMaster = new ethers.Contract(
         networkConfig.tokenMaster.address,
-        TokenMasterABI,
+        TicketChainABI,
         provider
       )
-      setTokenMaster(tokenMaster)
+      setTicketChain(tokenMaster)
 
       const totalOccasions = await tokenMaster.totalOccasions()
       const occasions = []

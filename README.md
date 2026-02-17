@@ -1,4 +1,4 @@
-# 🎫 TokenMaster — Web3 NFT Ticketing Platform
+# 🎫 TicketChain — Web3 NFT Ticketing Platform
 
 A decentralized event ticketing marketplace built on Ethereum. Purchase NFT-powered tickets for concerts, sports, and conferences with full seat selection.
 
@@ -35,8 +35,8 @@ A decentralized event ticketing marketplace built on Ethereum. Purchase NFT-powe
 ### Installation
 
 ```bash
-git clone https://github.com/ishreyasrivastava/tokenmaster.git
-cd tokenmaster
+git clone https://github.com/ishreyasrivastava/ticketchain.git
+cd ticketchain
 npm install
 ```
 
@@ -78,11 +78,11 @@ npx hardhat test
 
 ```
 ├── contracts/
-│   └── TokenMaster.sol      # ERC-721 ticket contract
+│   └── TicketChain.sol      # ERC-721 ticket contract
 ├── scripts/
 │   └── deploy.js             # Deployment with 5 sample events
 ├── test/
-│   └── TokenMaster.js        # Contract test suite
+│   └── TicketChain.js        # Contract test suite
 ├── src/
 │   ├── components/           # React components
 │   ├── abis/                 # Contract ABI
