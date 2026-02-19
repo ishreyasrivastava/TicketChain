@@ -70,13 +70,10 @@ function App() {
         position="bottom-right"
         toastOptions={{
           style: {
-            background: 'rgba(30, 27, 75, 0.95)',
+            background: '#1e1b4b',
             color: '#fff',
-            border: '1px solid rgba(139, 92, 246, 0.3)',
-            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(139, 92, 246, 0.2)',
           },
-          success: { iconTheme: { primary: '#8b5cf6', secondary: '#fff' } },
-          error: { iconTheme: { primary: '#ef4444', secondary: '#fff' } },
         }}
       />
 
